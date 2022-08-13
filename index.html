@@ -19,33 +19,36 @@
     <div class="header flex-row justify-between align-center grow">
       <div class="flex-row align-center gap-25">
         <!-- <img src="./images/trybewarts-header-logo.svg" alt="Logo da Trybewarts" class="trybewarts-header-logo"> -->
+        <img src="./images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo">
+
         <h1 id="trybewarts-header-title">Trybewarts</h1>
       </div>
 
       <form action="" method="GET" class="trybewarts-login">
         <fieldset class="flex-row gap-10">
-          <input type="text" name="email" id="inputEmail" placeholder="Email" autocomplete="off">
-          <input type="password" name="password" id="inputPass" placeholder="Senha">
-          <button id="loginButton">Entrar</button>
+          <input type="text" name="email" id="inputEmail" placeholder="Email" autocomplete="off" class="input rounded">
+          <input type="password" name="password" id="inputPass" placeholder="Senha" class="input rounded">
+          <button id="loginButton" class="rounded">Entrar</button>
         </fieldset>
       </form>
     </div>
   </header>
 
-  <main class="container flex-row">
+  <main class="flex-row justify-center gap-25">
     <form action="" method="GET" id="evaluation-form" class="flex-col">
-      <fieldset>
-        <div>
-          <input type="text" name="" id="input-name" placeholder="Nome">
-          <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
+      <fieldset class="flex-col gap-10 mb-20">
+        <p class="w700" style="margin-bottom: 0px;">Dados pessoais</p>
+        <div class="flex-row gap-10">
+          <input type="text" name="" id="input-name" placeholder="Nome" class="input rounded grow">
+          <input type="text" name="" id="input-lastname" placeholder="Sobrenome" class="input rounded grow">
         </div>
 
 
-        <div>
-          <input type="text" name="" id="input-email" placeholder="Email">
+        <div class="flex-row gap-10">
+          <input type="text" name="" id="input-email" placeholder="Email" class="input rounded grow">
 
-          <label for="house">Casa: </label>
-          <select name="" id="house">
+          <select name="" id="house" class="input rounded grow">
+            <option value="default" id="">Escolha sua casa:</option>
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
             <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -54,9 +57,9 @@
         </div>
       </fieldset>
 
-      <div class="flex-row">
-        <fieldset>
-          <label id="label-family">Qual sua família?</label>
+      <div class="flex-row mb-20">
+        <fieldset class="flex-col gap-10">
+          <label id="label-family" class="w700">Qual sua família?</label>
           <div>
             <input type="radio" name="family" value="Frontend" id="frontend">
             <label for="frontend">Frontend</label>
@@ -73,8 +76,8 @@
           </div>
         </fieldset>
 
-        <fieldset class="flex-col">
-          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <fieldset class="flex-col gap-10">
+          <label id="label-content" class="w700">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
             <input type="checkbox" name="hofs" value="HoFs" id="hofs" class="subject">
             <label for="hofs">HoFs</label>
@@ -99,56 +102,77 @@
         </fieldset>
       </div>
 
-      <fieldset>
-        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-        <input type="radio" name="rate" id="one" value="1">
-        <label for="one">1</label>
+      <fieldset class="flex-col gap-10 mb-20">
+        <label for="" id="label-rate" class="w700">Como você avalia a Trybewarts?</label>
+        <div class="flex-row gap-10">
+          <div>
+            <input type="radio" name="rate" id="one" value="1">
+            <label for="one">1</label>
+          </div>
 
-        <input type="radio" name="rate" id="two" value="2">
-        <label for="two">2</label>
+          <div>
+            <input type="radio" name="rate" id="two" value="2">
+            <label for="two">2</label>
+          </div>
 
-        <input type="radio" name="rate" id="three" value="3">
-        <label for="three">3</label>
+          <div>
+            <input type="radio" name="rate" id="three" value="3">
+            <label for="three">3</label>
+          </div>
 
-        <input type="radio" name="rate" id="four" value="4">
-        <label for="four">4</label>
+          <div>
+            <input type="radio" name="rate" id="four" value="4">
+            <label for="four">4</label>
+          </div>
 
-        <input type="radio" name="rate" id="five" value="5">
-        <label for="five">5</label>
+          <div>
+            <input type="radio" name="rate" id="five" value="5">
+            <label for="five">5</label>
+          </div>
 
-        <input type="radio" name="rate" id="six" value="6">
-        <label for="six">6</label>
+          <div>
+            <input type="radio" name="rate" id="six" value="6">
+            <label for="six">6</label>
+          </div>
 
-        <input type="radio" name="rate" id="seven" value="7">
-        <label for="seven">7</label>
+          <div>
+            <input type="radio" name="rate" id="seven" value="7">
+            <label for="seven">7</label>
+          </div>
 
-        <input type="radio" name="rate" id="eigth" value="8">
-        <label for="eight">8</label>
+          <div>
+            <input type="radio" name="rate" id="eigth" value="8">
+            <label for="eight">8</label>
+          </div>
 
-        <input type="radio" name="rate" id="nine" value="9">
-        <label for="nine">9</label>
+          <div>
+            <input type="radio" name="rate" id="nine" value="9">
+            <label for="nine">9</label>
+          </div>
 
-        <input type="radio" name="rate" id="ten" value="10">
-        <label for="ten">10</label>
+          <div>
+            <input type="radio" name="rate" id="ten" value="10">
+            <label for="ten">10</label>
+          </div>
+        </div>
       </fieldset>
 
-      <fieldset>
-        <label for="" class="textarea">Deixe seu comentário:</label>
-        <textarea name="" id="textarea" rows="10" maxlength="500"></textarea>
+      <fieldset class="flex-col gap-10 fieldarea">
+        <label for="" class="textarea w700">Deixe seu comentário:</label>
+        <textarea name="" id="textarea" rows="10" maxlength="500" class="rounded"></textarea>
         <p id="counter">500</p>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="mb-20">
         <label for="agreement" id="label-infos">
           Você concorda com o uso das informações acima?
         </label>
         <input type="checkbox" name="accept" id="agreement">
       </fieldset>
 
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <button type="submit" id="submit-btn" class="rounded" disabled>Enviar</button>
 
     </form>
-    <img src="./images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo">
   </main>
 
   <form id="form-data" class="is-hidden">
