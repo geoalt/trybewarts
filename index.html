@@ -15,14 +15,15 @@
 </head>
 
 <body>
-  <header>
-    <div class="header flex-row justify-between align-center">
-      <img src="./images/trybewarts-header-logo.svg" alt="Logo da Trybewarts" class="trybewarts-header-logo">
+  <header class="flex-row align-center">
+    <div class="header flex-row justify-between align-center grow">
+      <div class="flex-row align-center gap-25">
+        <!-- <img src="./images/trybewarts-header-logo.svg" alt="Logo da Trybewarts" class="trybewarts-header-logo"> -->
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
+      </div>
 
-      <h1 id="trybewarts-header-title">Trybewarts</h1>
-
-      <form action="" method="GET" class="trybewarts-login flex-row">
-        <fieldset>
+      <form action="" method="GET" class="trybewarts-login">
+        <fieldset class="flex-row gap-10">
           <input type="text" name="email" id="inputEmail" placeholder="Email" autocomplete="off">
           <input type="password" name="password" id="inputPass" placeholder="Senha">
           <button id="loginButton">Entrar</button>
@@ -31,7 +32,7 @@
     </div>
   </header>
 
-  <main class="flex-row">
+  <main class="container flex-row">
     <form action="" method="GET" id="evaluation-form" class="flex-col">
       <fieldset>
         <div>
