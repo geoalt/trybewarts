@@ -209,9 +209,9 @@ textarea {
   cursor: text;
   position: absolute;
   transition:
-    font-size 100ms ease-in-out,
-    left 100ms ease-in-out,
-    top 100ms ease-in-out;
+    font-size 100ms ease-in,
+    left 100ms ease-in,
+    top 100ms ease-in;
 }
 
 .input-itself,
