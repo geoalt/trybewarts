@@ -1,0 +1,79 @@
+/* MINI RESET */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+* , *:before , *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Figtree, sans-serif;
+  color: rgb(13, 17, 23);
+  margin: 0;
+  padding: 0;
+}
+
+h1 , h2 , h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+fieldset {
+  border: none;
+}
+
+/* HEADER */
+.header {
+  background-color: rgb(50, 167, 145);
+  height: 100px;
+}
+
+/* EVALUATION FORM - LEFT MAIN CONTENT */
+#evaluation-form {
+  width: 675px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+/* IMG TRYBEWARTS - RIGHT MAIN CONTENT */
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+/* UTILITIES */
+.container {
+  width: 960px;
+}
+
+/* HELPER FLEX DIRECTION CLASSES */
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HELPER FLEX ALIGN ITEMS */
+.align-center {
+  align-items: center;
+}
+
+/* HELPER FLEX JUSTIFY CONTENT */
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.is-hidden {
+  display: none;
+}
