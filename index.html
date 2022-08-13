@@ -19,9 +19,10 @@
     <div class="header flex-row justify-between align-center grow">
       <div class="flex-row align-center gap-25">
         <!-- <img src="./images/trybewarts-header-logo.svg" alt="Logo da Trybewarts" class="trybewarts-header-logo"> -->
-        <img src="./images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo">
 
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <!-- <img src="./images/trybewarts-colored.svg" alt="Logo da Trybewarts" id="trybewarts-forms-logo"> -->
+
+        <p id="trybewarts-header-title" class="display w700">Trybewarts</p>
       </div>
 
       <form action="" method="GET" class="trybewarts-login">
@@ -35,18 +36,31 @@
   </header>
 
   <main class="flex-row justify-center gap-25">
-    <form action="" method="GET" id="evaluation-form" class="flex-col">
-      <fieldset class="flex-col gap-10 mb-20">
-        <p class="w700" style="margin-bottom: 0px;">Dados pessoais</p>
+    <form action="" method="GET" id="evaluation-form" class="container flex-col">
+      <h1>Formulário para novos bruxos</h1>
+      <fieldset class="flex-col gap-10 mb-30">
+        <p class="w700 grow" style="margin-bottom: 0px;">Dados pessoais</p>
+
+
         <div class="flex-row gap-10">
-          <input type="text" name="" id="input-name" placeholder="Nome" class="input rounded grow">
-          <input type="text" name="" id="input-lastname" placeholder="Sobrenome" class="input rounded grow">
+          <div class="group flex-row grow">
+            <input type="text" name="" id="input-name" class="input input-itself rounded grow" placeholder=" ">
+            <label for="input-name" class="input-label">Nome</label>
+          </div>
+
+          <div class="group flex-row grow">
+            <input type="text" name="" id="input-lastname" placeholder=" " class="input input-itself rounded grow">
+            <label for="input-lastname" class="input-label">Sobrenome</label>
+          </div>
         </div>
 
 
-        <div class="flex-row gap-10">
-          <input type="text" name="" id="input-email" placeholder="Email" class="input rounded grow">
+        <div class="group flex-row">
+          <input type="text" name="" id="input-email" placeholder=" " class="input input-itself rounded grow">
+          <label for="input-email" class="input-label">Digite seu e-mail</label>
+        </div>
 
+        <div class="flex-row gap-10">
           <select name="" id="house" class="input rounded grow">
             <option value="default" id="">Escolha sua casa:</option>
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -57,7 +71,7 @@
         </div>
       </fieldset>
 
-      <div class="flex-row mb-20">
+      <div class="flex-row justify-between mb-30">
         <fieldset class="flex-col gap-10">
           <label id="label-family" class="w700">Qual sua família?</label>
           <div>
@@ -78,31 +92,43 @@
 
         <fieldset class="flex-col gap-10">
           <label id="label-content" class="w700">Qual conteúdo você está com mais vontade de aprender?</label>
-          <div>
-            <input type="checkbox" name="hofs" value="HoFs" id="hofs" class="subject">
-            <label for="hofs">HoFs</label>
+          <div class="flex-row gap-25">
+            <div>
+              <input type="checkbox" name="hofs" value="HoFs" id="hofs" class="subject">
+              <label for="hofs">HoFs</label>
+            </div>
 
-            <input type="checkbox" name="jest" value="Jest" id="jest" class="subject">
-            <label for="jest">Jest</label>
+            <div>
+              <input type="checkbox" name="jest" value="Jest" id="jest" class="subject">
+              <label for="jest">Jest</label>
+            </div>
 
-            <input type="checkbox" name="promises" value="Promises" id="promises" class="subject">
-            <label for="promises">Promises</label>
+            <div>
+              <input type="checkbox" name="promises" value="Promises" id="promises" class="subject">
+              <label for="promises">Promises</label>
+            </div>
           </div>
 
-          <div>
-            <input type="checkbox" name="react" value="React" id="react" class="subject">
-            <label for="react">React</label>
+          <div class="flex-row gap-25">
+            <div>
+              <input type="checkbox" name="react" value="React" id="react" class="subject">
+              <label for="react">React</label>
+            </div>
 
-            <input type="checkbox" name="sql" value="SQL" id="sql" class="subject">
-            <label for="sql">SQL</label>
+            <div>
+              <input type="checkbox" name="sql" value="SQL" id="sql" class="subject">
+              <label for="sql">SQL</label>
+            </div>
 
-            <input type="checkbox" name="python" value="Python" id="python" class="subject">
-            <label for="python">Python</label>
+            <div>
+              <input type="checkbox" name="python" value="Python" id="python" class="subject">
+              <label for="python">Python</label>
+            </div>
           </div>
         </fieldset>
       </div>
 
-      <fieldset class="flex-col gap-10 mb-20">
+      <fieldset class="flex-col gap-10 mb-30">
         <label for="" id="label-rate" class="w700">Como você avalia a Trybewarts?</label>
         <div class="flex-row gap-10">
           <div>
@@ -157,17 +183,17 @@
         </div>
       </fieldset>
 
-      <fieldset class="flex-col gap-10 fieldarea">
+      <fieldset class="flex-col gap-10 fieldarea mb-10">
         <label for="" class="textarea w700">Deixe seu comentário:</label>
-        <textarea name="" id="textarea" rows="10" maxlength="500" class="rounded"></textarea>
+        <textarea name="" id="textarea" rows="7" maxlength="500" class="rounded"></textarea>
         <p id="counter">500</p>
       </fieldset>
 
-      <fieldset class="mb-20">
-        <label for="agreement" id="label-infos">
-          Você concorda com o uso das informações acima?
-        </label>
+      <fieldset class="mb-30">
         <input type="checkbox" name="accept" id="agreement">
+        <label for="agreement" id="label-infos">
+          Concordo com o uso das informações acima.
+        </label>
       </fieldset>
 
       <button type="submit" id="submit-btn" class="rounded" disabled>Enviar</button>
@@ -177,10 +203,6 @@
 
   <form id="form-data" class="is-hidden">
   </form>
-
-  <footer>
-    <p>Direitos reservados à Trybewarts©</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>

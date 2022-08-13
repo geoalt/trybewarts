@@ -26,6 +26,8 @@ h3 {
 
 fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 input,
@@ -35,12 +37,16 @@ textarea {
   font-size: 16px;
 }
 
+button {
+  font-family: inherit;
+}
+
 /* HEADER */
 header {
-  /* background-color: rgb(50, 167, 145); */
-  height: 120px;
-  padding: 0 50px;
-  margin-bottom: 10px;
+  background-color: #333969;
+  height: 55px;
+  padding: 0 70px;
+  margin-bottom: 30px;
 }
 
 .input {
@@ -54,18 +60,19 @@ header {
 }
 
 header button {
-  background-color: #333969;
+  background-color: #ED8A9D;
   border: none;
-  color: white;
+  color: #841f34;
   padding: 0 20px;
 }
 
 #trybewarts-header-title {
+  color: white;
   font-weight: 900;
 }
 
 .trybewarts-header-logo {
-  width: 50px;
+  width: 35px;
 }
 
 .trybewarts-login input {
@@ -76,13 +83,13 @@ header button {
 
 /* EVALUATION FORM - LEFT MAIN CONTENT */
 #evaluation-form {
-  width: 675px;
+  margin-bottom: 60px;
 }
 
 textarea {
   border: 2px solid rgba(0, 0, 0, 0.25);
   position: relative;
-  padding: 5px 5px 5px 10px;
+  padding: 15px 60px 15px 15px;
   resize: none;
   width: 100%;
 }
@@ -92,11 +99,11 @@ textarea {
 }
 
 .fieldarea p {
-  bottom: 5px;
+  bottom: 0;
   font-size: 13px;
   display: block;
   position: absolute;
-  right: 25px;
+  right: 30px;
 }
 
 #submit-btn {
@@ -104,13 +111,16 @@ textarea {
   background-color: #333969;
   border: none;
   color: white;
-  margin-left: 13px;
   padding: 10px 30px;
+  transition:
+    background-color 200ms ease-in,
+    color 200ms ease-in;
 }
 
 #submit-btn:disabled {
-  cursor: not-allowed;
   background-color: #7e829f;
+  color: #adb0c2;
+  cursor: not-allowed;
 }
 
 /* IMG TRYBEWARTS - RIGHT MAIN CONTENT */
@@ -120,7 +130,11 @@ textarea {
 
 /* UTILITIES */
 .container {
-  width: 960px;
+  width: 800px;
+}
+
+.display {
+  font-size: 22px;
 }
 
 /* HELPER FLEX DIRECTION CLASSES */
@@ -136,6 +150,10 @@ textarea {
 /* HELPER FLEX ALIGN ITEMS */
 .align-center {
   align-items: center;
+}
+
+.align-baseline {
+  align-items: baseline;
 }
 
 /* HELPER FLEX JUSTIFY CONTENT */
@@ -167,12 +185,65 @@ textarea {
   gap: 25px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .w700 {
   font-weight: 700;
+}
+
+.group {
+  position: relative;
+}
+
+.group label {
+  cursor: text;
+  position: absolute;
+  transition:
+    font-size 100ms ease-in-out,
+    left 100ms ease-in-out,
+    top 100ms ease-in-out;
+}
+
+.input-itself,
+select,
+textarea {
+  outline: none;
+}
+
+.input-itself:hover,
+select:hover,
+textarea:hover {
+  border: 2px solid #459cfa;
+}
+
+.input-itself:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid #459cfa;
+}
+
+.input-itself:focus~.input-label,
+.input-itself:not(:placeholder-shown)~.input-label {
+  background-color: white;
+  font-size: 10px;
+  left: 7px;
+  padding: 0 3px;
+  top: -6px;
+}
+
+.input-label {
+  left: 10px;
+  top: 8px;
 }
 
 .is-hidden {
